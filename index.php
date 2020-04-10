@@ -81,19 +81,19 @@
 				array_push($options, 'mode=' . $_POST['mode']);
 
 				if ($_POST['caption'] != "") {
-					array_push($options, 'caption="' . $_POST['caption'] . '"'); 
+					array_push($options, 'caption="' . htmlentities($_POST['caption']) . '"'); 
 				}
 				
 				if ($_POST['widths'] != "") {
-					array_push($options, 'widths=' . $_POST['widths'] . 'px');
+					array_push($options, 'widths=' . htmlentities($_POST['widths']) . 'px');
 				}				
 				
 				if ($_POST['heights'] != "") {
-					array_push($options, 'heights=' . $_POST['heights'] . 'px');
+					array_push($options, 'heights=' . htmlentities($_POST['heights']) . 'px');
 				}				
 				
 				if ($_POST['perrow'] != "") {
-					array_push($options, 'perrow=' . $_POST['perrow']);
+					array_push($options, 'perrow=' . htmlentities($_POST['perrow']));
 				}				
 				
 				if (isset($_POST['showfilename'])) {
@@ -136,7 +136,7 @@
 	<?php 
 	if(!isset($_POST['action'])) {
 		?>
-		<pre>Created by <a href="https://meta.wikimedia.org/wiki/User:Ferdi2005">Ferdinando Traversa</a> - Contact him at wiki@traversa.me - Source: <a href="https://github.com/ferdi2005/gallery">on Github</a> - v 1.0</pre>
+		<pre>Created by <a href="https://meta.wikimedia.org/wiki/User:Ferdi2005">Ferdinando Traversa</a> - Contact him at wiki[at]traversa.me - Source: <a href="https://github.com/ferdi2005/gallery">on Github</a> - v 1.1 - Thanks to Valerio Bozzolan, especially for his <b>glorious</b> <a href="https://gitpull.it/w/first_steps_with_boz-mw">MediaWiki framework for PHP</a>. </pre>
 		<?php
 	}	
 	?>
