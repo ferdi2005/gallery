@@ -1,0 +1,3 @@
+[submodule "boz-mw"]
+	path = boz-mw
+	url = https://gitpull.it/source/boz-mw.git
