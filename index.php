@@ -7,6 +7,7 @@
 	<style>
 		body {
 			font-family: sans-serif;
+			word-break: break-word;
 		}
 		label {
 			font-weight: bold;
@@ -126,7 +127,7 @@
 						echo('<b>WARNING!</b> The category you want to generate a gallery from is empty.');
 					}
 			}
-			echo('&lt;gallery/>');
+			echo('&lt;/gallery>');
 
 		}
 
@@ -136,7 +137,7 @@
 	<?php 
 	if(!isset($_POST['action'])) {
 		?>
-		<pre>Created by <a href="https://meta.wikimedia.org/wiki/User:Ferdi2005">Ferdinando Traversa</a> - Contact him at wiki[at]traversa.me - Source: <a href="https://github.com/ferdi2005/gallery">on Github</a> - v 1.1 - Thanks to Valerio Bozzolan, especially for his <b>glorious</b> <a href="https://gitpull.it/w/first_steps_with_boz-mw">MediaWiki framework for PHP</a>. </pre>
+		<pre>Created by <a href="https://meta.wikimedia.org/wiki/User:Ferdi2005">Ferdinando Traversa</a> - Contact him at wiki[at]traversa.me - Source: <a href="https://github.com/ferdi2005/gallery">on Github</a> - v 1.2 - Thanks to Valerio Bozzolan, especially for his <b>glorious</b> <a href="https://gitpull.it/w/first_steps_with_boz-mw">MediaWiki framework for PHP</a>. </pre>
 		<?php
 	}	
 	?>
